@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #E5E5CB;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+/*---NAVBAR SECTION---*/
+.navbar{
+    background-color: #1A120B;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 2rem;
+}
+
+.navbar .logo{
+    color: #E5E5CB;
+    font-weight: 800;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    padding-right: 1.5rem;
+    color:#E5E5CB;
+}
+
+
+/*---MAIN SECTION---*/
+.home{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.home h1{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.home-img{
+    display: flex;
+    gap: 2.2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
