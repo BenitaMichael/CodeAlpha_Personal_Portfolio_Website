@@ -10,6 +10,10 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*---NAVBAR SECTION---*/
 .navbar{
     background-color: #1A120B;
@@ -24,7 +28,7 @@ body{
     font-weight: 800;
 }
 
-.navbar ul a{
+.nav-links a{
     text-decoration: none;
     padding-right: 1.5rem;
     color:#E5E5CB;
@@ -34,6 +38,22 @@ body{
     visibility: hidden;
     width: 30px;
 }
+
+@media (max-width:768px){
+    #menu{
+        visibility: visible;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links.mobile-nav{
+        display: flex;
+    }
+}
+
+
 
 
 /*---MAIN SECTION---*/
@@ -65,13 +85,29 @@ body{
     border-radius: 50%;
 }
 
+.home-img p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 12px;
+}
+
 
 @media (max-width:768px){
-    #menu{
-        visibility: visible;
+    .home{
+        height: fit-content;
     }
 
-    .navbar ul{
-        display: none
+    .home h1{
+        font-size: 2rem;
+        padding: 2rem;
+    }    
+
+    .home-img{
+        display: block;
+    }
+
+    .home-img img{
+        width: 240px;
+        height: 240px;
     }
 }
