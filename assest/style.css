@@ -14,6 +14,22 @@ html{
     scroll-behavior: smooth;
 }
 
+.heading{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1A120B;
+    padding-bottom: 4px;
+}
+
+hr{
+    width:80px;
+    height: 4px;
+    border: none;
+    background-color: #1A120B;
+    margin: 0 auto;
+}
+
+
 /*---NAVBAR SECTION---*/
 .navbar{
     background-color: #1A120B;
