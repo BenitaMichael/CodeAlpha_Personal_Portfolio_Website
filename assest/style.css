@@ -19,6 +19,7 @@ html{
     font-size: 2.2rem;
     color: #1A120B;
     padding-bottom: 4px;
+    padding-top: 4rem;
 }
 
 hr{
@@ -31,6 +32,9 @@ hr{
 
 
 /*---NAVBAR SECTION---*/
+.nav{
+    position: fixed;
+}
 .navbar{
     background-color: #1A120B;
     display: flex;
@@ -104,7 +108,7 @@ hr{
 .home-img p{
     font-size: 1.2rem;
     font-weight: 600;
-    padding: 12px;
+    margin: 1rem 3rem;
 }
 
 @media (max-width: 1200px){
@@ -136,16 +140,17 @@ hr{
 
 
 /*---SKILLS SECTION---*/
-.skills p{
-    padding: 1rem 1.2rem;
-    font-size: 1rem;
+.skills .skills-text, .projects .projects-text{
+    margin: 1rem 3rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 .skill{
     width: 300px;
     height: 200px;
     padding: 0 12px;
-    border: 2px solid #fff;
+    background: #D5CEA3;
+    border: 2px solid #3C2A21;
     border-radius: 20%;
     display: flex;
     flex-direction: column;
@@ -159,4 +164,28 @@ hr{
     flex-wrap: wrap;
     gap: 16px;
     padding: 0 40px;
+}
+
+ 
+@media (max-width: 768px){
+    .skill{
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/*---PROJECTS SECTION---*/
+
+.deployed-projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects h3{
+    text-align: center;
 }
