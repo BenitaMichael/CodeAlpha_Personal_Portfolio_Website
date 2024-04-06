@@ -32,9 +32,7 @@ hr{
 
 
 /*---NAVBAR SECTION---*/
-.nav{
-    position: fixed;
-}
+
 .navbar{
     background-color: #1A120B;
     display: flex;
