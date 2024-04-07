@@ -260,3 +260,30 @@ hr{
         margin-bottom: 1.6rem;
     }
 }
+
+
+/*---CONTACT SECTION---*/
+
+
+
+/*---FOOTER SECTION---*/
+footer{
+    background: #1A120B;
+    height: 18vh;
+}
+
+footer h2{
+    color: #E5E5CB;
+}
+
+footer .text-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 2.5rem;
+}
+
+footer .text-img img{
+    width: 40px;
+}
