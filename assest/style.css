@@ -30,6 +30,12 @@ hr{
     margin: 0 auto;
 }
 
+@media (max-width:768px){
+    hr{
+        margin-bottom: 1.6rem;
+    }
+}
+
 
 /*---NAVBAR SECTION---*/
 
@@ -138,7 +144,7 @@ hr{
 
 
 /*---SKILLS SECTION---*/
-.skills .skills-text, .projects .projects-text{
+.skills .skills-text{
     margin: 1rem 3rem;
     font-size: 1.2rem;
     font-weight: 700;
@@ -176,7 +182,14 @@ hr{
 
 
 /*---PROJECTS SECTION---*/
-
+.projects{
+    margin: 0 3rem;
+}
+.projects .projects-text, .honourable-heading h4{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
 .deployed-projects{
     display: flex;
     justify-content: space-evenly;
@@ -184,6 +197,66 @@ hr{
     flex-wrap: wrap;
 }
 
+.deployed-projects .project{
+    width: 420px;
+    height: fit-content;
+    padding: 1.5rem;
+    border: 2px solid #E5E5CB;
+    background-color: #D5CEA3;
+    text-align: center;
+    line-height: 1.8rem;
+}
+.deployed-projects .project h1{
+    color: #1A120B;
+    padding: 8px;
+}
+.deployed-projects .project img{
+    width: 300px;
+}
+.deployed-projects .project p{
+    font-size: 1.1rem;
+}
+.deployed-projects .project a{
+    color: #1A120B;
+}
+
+
 .projects h3{
     text-align: center;
+    margin-top: 3rem;
+}
+.honourable-mentions{
+    margin-bottom: 2rem;
+}
+.honourable-heading{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 1rem 0 0.2rem 0;
+}
+
+.honourable-heading img{
+    width: 40px;
+}
+.honourable-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.honourable-link a{
+    color: #1A120B;
+}
+.honourable-link img{
+    width: 30px;
+}
+.honourable-mentions p, ul li{
+    font-size: 1.1rem;
+    line-height: 24px;
+}
+
+@media (max-width:768px){
+    .deployed-projects .project{
+        margin-bottom: 1.6rem;
+    }
 }
