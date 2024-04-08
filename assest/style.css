@@ -8,6 +8,7 @@ body{
     background: #E5E5CB;
     color: #000000;
     overflow-x: hidden;
+    position: relative;
 }
 
 html{
@@ -19,7 +20,7 @@ html{
     font-size: 2.2rem;
     color: #1A120B;
     padding-bottom: 4px;
-    padding-top: 4rem;
+    padding-top: 6rem;
 }
 
 hr{
@@ -38,41 +39,65 @@ hr{
 
 
 /*---NAVBAR SECTION---*/
-
-.navbar{
+.navbar {
     background-color: #1A120B;
     display: flex;
     justify-content: space-around;
-    align-content: center;
+    align-items: center;
     padding: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 
-.navbar .logo{
+.navbar .logo {
     color: #E5E5CB;
     font-weight: 800;
 }
 
-.nav-links a{
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
     text-decoration: none;
     padding-right: 1.5rem;
-    color:#E5E5CB;
+    color: #E5E5CB;
 }
 
-#menu{
+#menu {
     visibility: hidden;
     width: 30px;
+    cursor: pointer;
 }
 
-@media (max-width:768px){
-    #menu{
+@media (max-width: 768px) {
+    #menu {
         visibility: visible;
     }
 
-    .nav-links{
-        display: none;
+    .navbar {
+        background-color: #1A120B;
+        position: relative;
+        top: 0;
     }
 
-    .nav-links.mobile-nav{
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #1A120B;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-links.mobile-nav {
         display: flex;
     }
 }
@@ -80,14 +105,16 @@ hr{
 
 
 
+
 /*---MAIN SECTION---*/
 .home{
-    height: 85vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .home h1{
@@ -97,6 +124,7 @@ hr{
 
 .home-img{
     display: flex;
+    margin-top: -3rem;
     gap: 2.2rem;
     flex-direction: row;
     justify-content: space-evenly;
@@ -122,6 +150,14 @@ hr{
     .home-img img{
         width: 240px;
         height: 240px;
+    }
+
+    .home{
+        height: fit-content;
+    }
+
+    .home-img{
+        margin-top: 1rem;
     }
 }
 
@@ -262,6 +298,39 @@ hr{
 }
 
 
+
+/*---RESUME SECTION---*/
+.certificates{
+    margin: 2rem 2rem 0 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cert{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1A120B;
+    background-color: #D5CEA3;
+    border-radius: 25px;
+    padding: 16px;
+    margin-bottom: 1rem;
+}
+.cert img{
+    width: 260px;
+    height: 150px;
+    margin: 1rem auto;
+}
+
+.cert a{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #3C2A21;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
 /*---CONTACT SECTION---*/
 .contact{
     padding: 3rem;
@@ -330,4 +399,10 @@ footer .text-img{
 
 footer .text-img img{
     width: 40px;
+}
+
+@media (max-width: 435px){
+    footer{
+        height: 12vh;
+    }
 }
