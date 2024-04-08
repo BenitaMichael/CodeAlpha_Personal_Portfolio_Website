@@ -294,6 +294,10 @@ hr{
 @media (max-width:768px){
     .deployed-projects .project{
         margin-bottom: 1.6rem;
+        width: 380px
+    }
+    .deployed-projects .project img{
+        width: 250px;
     }
 }
 
@@ -376,6 +380,14 @@ form input[type=submit]:hover{
 }
 .socials .text-img a{
     color: #3C2A21;
+}
+
+@media (max-width: 425px){
+    .socials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 
